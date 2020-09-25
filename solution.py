@@ -66,7 +66,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     clientSocket.send(quitCommand)
     recv1 = clientSocket.recv(1024)
     #print(recv1) 
-        pass
+    
     # Fill in end
 
 
