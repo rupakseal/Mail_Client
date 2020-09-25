@@ -78,6 +78,8 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     #print(recv1)
     if recv1[:3] != '250':
         print('quit 250 reply not received from server.')
+        
+        pass
     # Fill in end
 
 
