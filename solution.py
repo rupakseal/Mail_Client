@@ -40,7 +40,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send DATA command and print server response.
     # Fill in start
-    dataCommand = 'Data\r\n'
+    dataCommand = 'DATA\r\n'
     #print(dataCommand)
     clientSocket.send(dataCommand.encode())
     recv1 = clientSocket.recv(1024)
@@ -62,7 +62,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send QUIT command and get server response.
     # Fill in start
-    quitCommand = 'Quit\r\n'
+    quitCommand = 'QUIT\r\n'
    # print(quitCommand)
     clientSocket.send(quitCommand.encode())
     recv1 = clientSocket.recv(1024)
